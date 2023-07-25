@@ -1,0 +1,15 @@
+基本技能要求了解python，http，vocechat
+1. 搭好一个可以访问的vocechat-server。
+. 摄像头所处位置能访问就能发送消息，接收方也能访问到就能读到消息，可以是内部网可以是互联网
+2. 新建一个机器人，并获取x-api-key，webhook随便输入一个地址能打开就行，因为我们只接受消息不发送指令。
+vocechat-server管理员登陆进入后台，打开设置，配置-机器人&Webhook
+注意我的：e6436097fd63ebeefc1262397c5406cede6c42132d65a2a8ae1e5742d5c219a27b22756964223a31312c226e6f6e6365223a226c625a6d4b70374a766d514141414141626e533032685a31334e567639305053227d
+3. 调试发送消息的cambot.py
+. vocechat-server管理员登陆进入后台，打开设置，最下面API文档
+https://your.domain/api/swagger
+pip install requests
+运行这段代码，能收到消息这个步骤结束
+4. 调试监控事件的eventcam.py
+这个过程就就登录后台读取日志，或者用其它模式得到这个事件，然后使用3的模块发出消息。
+
+
